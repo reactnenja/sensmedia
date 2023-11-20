@@ -1,0 +1,67 @@
+.footer {
+  width: 100%;
+  height: 321px;
+  background: #ffffff;
+  padding: 52px 0px 63px 0px;
+  .btn-foot {
+    @include btn($padding: 14px 38px 14px 42px);
+  }
+  .footer-main {
+    @include columns($column: 3, $gap: 0px, $content: center, $items: center);
+    width: 100%;
+    padding: 20px;
+    &__items {
+      width: 100%;
+      img {
+        width: 325px;
+        height: 70px;
+        margin-bottom: 10px;
+      }
+      h5 {
+        color: #333333;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: underline;
+        margin-bottom: 22px;
+      }
+
+      ol {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          a {
+            color: $text-heading;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 36px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-decoration: none;
+          }
+        }
+        li {
+          a {
+            color: $text-heading;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 36px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .black {
+    background-color: black;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+}

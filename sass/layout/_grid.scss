@@ -1,0 +1,12 @@
+@mixin columns(
+  $column: 2,
+  $gap: 20px,
+  $content: space-between,
+  $items: center
+) {
+  display: grid;
+  grid-template-columns: repeat($column, 1fr);
+  justify-content: $content;
+  align-items: $items;
+  gap: $gap;
+}
